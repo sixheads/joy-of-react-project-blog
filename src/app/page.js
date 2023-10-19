@@ -5,6 +5,12 @@ import { getBlogPostList } from '@/helpers/file-helpers';
 
 import styles from './homepage.module.css';
 
+export const metadata = {
+  title: 'Bits & Bytes',
+  description: 'A wonderful blog about JavaScript',
+  // slug: '/',
+};
+
 async function Home() {
   const blogPosts = await getBlogPostList();
   console.log(blogPosts);
